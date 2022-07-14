@@ -19,7 +19,7 @@ const App = () => {
       <Text style={styles.saldo}>Saldo atual: $2.102,45</Text>
       <Button onPress={addEntry} title="adicionar" />
 
-      <Text style={styles.categorias}>Categorias</Text>
+      <Text style={styles.tittle}>Categorias</Text>
       <FlatList
         data={[
           {key: 'Alimentação: $200'},
@@ -31,7 +31,7 @@ const App = () => {
         renderItem={({item}) => <Text>{item.key}</Text>}
       />
 
-      <Text style={styles.categorias}>Últimos lançamentos</Text>
+      <Text style={styles.tittle}>Últimos lançamentos</Text>
       <FlatList
         data={[
           {key: 'Padaria Asa Branca: $10'},
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     textAlign: 'center',
   },
-  categorias: {
+  tittle: {
     fontSize: 22,
     fontWeight: 'bold',
     marginTop: 10,
