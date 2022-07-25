@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Button, StyleSheet} from 'react-native';
-import RNPickerSelect from 'react-native-picker-select';
 import {Picker} from '@react-native-community/picker';
 
 import Entrylabel from '../../components/BalancePanel/BalancePanelLabel';
@@ -11,9 +10,14 @@ const Report = () => {
   return (
     <View style={styles.container}>
       <Entrylabel />
-      <Picker>
-        <Picker.Item label="teste" />
-      </Picker>
+      <View>
+        <Picker>
+          <Picker.Item label="Todas as Categorias" />
+        </Picker>
+        <Picker>
+          <Picker.Item label="últimos 7 dias" />
+        </Picker>
+      </View>
       <EntrySummary />
       <EntryList />
       <View>
